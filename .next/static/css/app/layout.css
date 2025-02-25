@@ -656,6 +656,9 @@ video {
 .h-96 {
   height: 24rem;
 }
+.h-\[500\] {
+  height: 500;
+}
 .h-\[6px\] {
   height: 6px;
 }
@@ -668,8 +671,14 @@ video {
 .h-max {
   height: max-content;
 }
-.h-\[500\] {
-  height: 500;
+.h-\[500px\] {
+  height: 500px;
+}
+.h-32 {
+  height: 8rem;
+}
+.h-\[2px\] {
+  height: 2px;
 }
 .w-1\/2 {
   width: 50%;
@@ -682,6 +691,9 @@ video {
 }
 .w-2\/3 {
   width: 66.666667%;
+}
+.w-24 {
+  width: 6rem;
 }
 .w-3 {
   width: 0.75rem;
@@ -703,9 +715,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-24 {
-  width: 6rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -787,6 +796,10 @@ video {
 .rounded-sm {
   border-radius: 0.125rem;
 }
+.bg-\[\#EBEDED\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 237 237 / var(--tw-bg-opacity));
+}
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -821,10 +834,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-\[\#EBEDED\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 237 237 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -957,6 +966,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.line-through {
+  text-decoration-line: line-through;
+}
 .shadow-\[0_3px_10px_rgb\(0\2c 0\2c 0\2c 0\.2\)\] {
   --tw-shadow: 0 3px 10px rgb(0,0,0,0.2);
   --tw-shadow-colored: 0 3px 10px var(--tw-shadow-color);
@@ -979,13 +991,13 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
 }
-.ring-gray-600 {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
-}
 .ring-gray-400 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
+}
+.ring-gray-600 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
 }
 .transition-all {
   transition-property: all;
@@ -1075,16 +1087,16 @@ video {
     display: flex;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:w-1\/4 {
     width: 25%;
   }
 
   .lg\:w-\[22\%\] {
     width: 22%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
   }
 
   .lg\:flex-row {
