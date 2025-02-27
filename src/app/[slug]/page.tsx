@@ -1,6 +1,17 @@
+import CustomizeProducts from "@/components/CustomizeProducts"
 import ProductImages from "@/components/ProductImages"
+import Add from "@/components/Add"
+import { wixClientServer } from "@/lib/wixClientServer"
 
-const SinglePage = () => {
+const SinglePage = async () => {
+
+      const wixClient = await wixClientServer()
+    
+        const res = await wixClient.products
+        .queryProducts()
+        // .eq("collectionIds",categoryId)
+        .find();
+        
     return (
         <div className='px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative flex flex-col lg:flex-row gap-16'>
             {/* IMG */}
@@ -19,6 +30,27 @@ const SinglePage = () => {
                     <h2 className="font-medium text-2xl">$49</h2>
                 </div>
                 <div className="h-[2px] bg-gray-100"/>
+                <CustomizeProducts/>
+                <Add/>
+                <div className="h-[2px] bg-gray-100"/>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, id voluptate ex ab eos eveniet voluptas? Soluta ullam consectetur omnis nobis impedit ad consequatur voluptatibus, sed laborum adipisci ducimus non?
+                    </p>
+                </div>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, id voluptate ex ab eos eveniet voluptas? Soluta ullam consectetur omnis nobis impedit ad consequatur voluptatibus, sed laborum adipisci ducimus non?
+                    </p>
+                </div>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, id voluptate ex ab eos eveniet voluptas? Soluta ullam consectetur omnis nobis impedit ad consequatur voluptatibus, sed laborum adipisci ducimus non?
+                    </p>
+                </div>
             </div>
         </div>
     )
